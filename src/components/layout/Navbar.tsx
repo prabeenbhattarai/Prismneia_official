@@ -138,7 +138,7 @@ export function Navbar() {
             <Button href="/contact" variant="ghost">
               Log in
             </Button>
-            <Button href="/contact" variant="neon" showArrow>
+            <Button href="/contact" variant="white" showArrow>
               Get a quote
             </Button>
           </div>

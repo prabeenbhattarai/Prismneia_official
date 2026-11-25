@@ -129,7 +129,7 @@ export function MobileMenu({ open, onClose }: { open: boolean; onClose: () => vo
             <Button href="/contact" variant="ghost" onClick={onClose}>
               Log in
             </Button>
-            <Button href="/contact" variant="neon" showArrow onClick={onClose}>
+            <Button href="/contact" variant="white" showArrow onClick={onClose}>
               Get a quote
             </Button>
           </div>

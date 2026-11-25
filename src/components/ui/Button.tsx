@@ -6,7 +6,7 @@ import clsx from "clsx";
 type ButtonProps = {
   href: string;
   children: ReactNode;
-  variant?: "neon" | "ghost";
+  variant?: "neon" | "ghost" | "white";
   size?: "md" | "lg";
   showArrow?: boolean;
   className?: string;
@@ -29,7 +29,7 @@ export function Button({
       className={clsx(
         "inline-flex items-center justify-center gap-2 rounded-full whitespace-nowrap transition-colors",
         size === "lg" ? "px-7 py-3.5 text-base" : "px-6 py-3 text-base",
-        variant === "neon" ? "btn-neon" : "btn-ghost",
+        variant === "neon" ? "btn-neon" : variant === "white" ? "btn-white" : "btn-ghost",
         className
       )}
     >

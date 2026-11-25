@@ -101,7 +101,7 @@ export function Platforms() {
                   );
                 })}
 
-                <Button href="/aitextools" showArrow className="mt-2 justify-center">
+                <Button href="/aitextools" variant="white" showArrow className="mt-2 justify-center">
                   Try AiTexTools
                 </Button>
               </div>
