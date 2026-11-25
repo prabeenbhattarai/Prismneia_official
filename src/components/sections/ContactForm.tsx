@@ -85,10 +85,10 @@ export function ContactForm() {
       <button
         type="submit"
         disabled={loading}
-        className="btn-neon flex w-full items-center justify-center gap-2 rounded-full py-4 text-lg font-semibold disabled:opacity-70"
+        className="btn-neon flex w-full items-center justify-center gap-2 rounded-full py-3 text-[15px] disabled:opacity-70"
       >
         {loading ? "Sending..." : "Send message"}
-        {!loading && <ArrowRight className="size-5" />}
+        {!loading && <ArrowRight className="size-4" />}
       </button>
       <p className="text-center text-sm text-muted">We reply within one business day.</p>
     </form>

@@ -115,7 +115,7 @@ export function PdfellaDemo() {
                   </span>
                   <p className="mt-5 text-2xl font-semibold text-slate-900">Drop your files here</p>
                   <p className="mt-1 text-sm text-slate-500">or</p>
-                  <span className="mt-4 inline-flex items-center rounded-xl bg-[#0e7a62] px-6 py-3 text-base font-medium text-white">
+                  <span className="mt-4 inline-flex items-center rounded-xl bg-[#0e7a62] px-6 py-3 text-base font-medium text-[#ffffff]">
                     Upload document
                   </span>
                   <p className="mt-5 text-xs text-slate-500">PDF, PNG, JPG, WEBP · up to 100 MB</p>
@@ -159,7 +159,7 @@ export function PdfellaDemo() {
               <span className="size-2.5 rounded-full bg-emerald-400" />
               <span className="ml-2 text-xs font-medium text-slate-600">agreement.pdf</span>
               <span
-                className={`ml-auto inline-flex items-center gap-1.5 rounded-lg px-3 py-1 text-xs font-medium text-white transition-colors duration-300 ${
+                className={`ml-auto inline-flex items-center gap-1.5 rounded-lg px-3 py-1 text-xs font-medium text-[#ffffff] transition-colors duration-300 ${
                   saved ? "bg-emerald-600" : "bg-[#0e7a62]"
                 }`}
               >

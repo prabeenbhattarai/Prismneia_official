@@ -115,7 +115,7 @@ export function WelcomePopup() {
                   <p className="mt-2 max-w-sm text-[15px] text-foreground/80">
                     We will reply within one business day with some first thoughts.
                   </p>
-                  <button onClick={close} className="btn-neon mt-6 rounded-full px-7 py-3 text-base font-semibold">
+                  <button onClick={close} className="btn-neon mt-6 rounded-full px-6 py-2.5 text-[15px]">
                     Back to the site
                   </button>
                 </div>
@@ -178,7 +178,7 @@ export function WelcomePopup() {
                     <button
                       type="submit"
                       disabled={loading}
-                      className="btn-neon flex w-full items-center justify-center gap-2 rounded-full py-3 text-base font-semibold disabled:opacity-70"
+                      className="btn-neon flex w-full items-center justify-center gap-2 rounded-full py-2.5 text-[15px] disabled:opacity-70"
                     >
                       {loading ? "Sending..." : "Start the conversation"}
                       {!loading && <ArrowRight className="size-4" />}

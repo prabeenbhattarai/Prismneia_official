@@ -28,13 +28,13 @@ export function Button({
       onClick={onClick}
       className={clsx(
         "inline-flex items-center justify-center gap-2 rounded-full whitespace-nowrap transition-colors",
-        size === "lg" ? "px-7 py-3.5 text-base" : "px-6 py-3 text-base",
+        size === "lg" ? "px-6 py-2.5 text-[15px]" : "px-5 py-2 text-sm",
         variant === "neon" ? "btn-neon" : variant === "white" ? "btn-white" : "btn-ghost",
         className
       )}
     >
       {children}
-      {showArrow && <ArrowRight className="size-4" strokeWidth={2.25} />}
+      {showArrow && <ArrowRight className="size-3.5" strokeWidth={2.25} />}
     </Link>
   );
 }

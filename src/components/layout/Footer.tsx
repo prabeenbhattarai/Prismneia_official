@@ -81,7 +81,7 @@ export function Footer() {
         <div
           aria-hidden
           className="pointer-events-none mt-10 flex select-none items-end justify-center gap-[1.5vw] overflow-hidden"
-          style={{ maskImage: "linear-gradient(to bottom, black 35%, transparent 100%)", WebkitMaskImage: "linear-gradient(to bottom, black 35%, transparent 100%)" }}
+          style={{ maskImage: "linear-gradient(to bottom, black 55%, rgba(0,0,0,0.55) 100%)", WebkitMaskImage: "linear-gradient(to bottom, black 55%, rgba(0,0,0,0.55) 100%)" }}
         >
           <LogoMark className="mb-[-2vw] h-[12vw] w-auto" />
           <span className="text-[16.5vw] leading-[0.82] font-semibold tracking-[-0.05em] text-foreground">

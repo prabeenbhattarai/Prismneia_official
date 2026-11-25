@@ -129,7 +129,8 @@ body {
 }
 
 .mega-panel {
-  background: color-mix(in srgb, var(--background-elevated) 98%, transparent);
+  background: color-mix(in srgb, var(--background-elevated) 86%, transparent);
+  -webkit-backdrop-filter: blur(28px) saturate(1.6);
   border: 1px solid var(--border-strong);
   backdrop-filter: blur(24px);
 }
@@ -144,19 +145,18 @@ body {
 
 .btn-neon {
   position: relative;
-  background: var(--gradient-neon);
-  color: #04070d;
-  font-weight: 600;
-  box-shadow: 0 0 0 1px rgb(var(--tint) / 0.06) inset, 0 8px 30px -8px rgba(47, 107, 255, 0.65);
-  transition: transform 0.25s ease, box-shadow 0.25s ease, filter 0.25s ease;
+  background: var(--foreground);
+  color: var(--background);
+  font-weight: 500;
+  border: 1px solid transparent;
+  box-shadow: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
 }
 .btn-neon:hover {
-  transform: translateY(-1px);
-  filter: brightness(1.08);
-  box-shadow: 0 0 0 1px rgb(var(--tint) / 0.08) inset, 0 10px 36px -6px rgba(34, 224, 255, 0.75);
+  opacity: 0.88;
 }
 .btn-neon:active {
-  transform: translateY(0px);
+  transform: translateY(1px);
 }
 
 .btn-ghost {
@@ -166,8 +166,8 @@ body {
   transition: border-color 0.25s ease, background-color 0.25s ease;
 }
 .btn-ghost:hover {
-  border-color: rgba(34, 224, 255, 0.5);
-  background: rgba(34, 224, 255, 0.06);
+  border-color: rgb(var(--tint) / 0.45);
+  background: rgb(var(--tint) / 0.06);
 }
 
 .glow-orb {
@@ -297,13 +297,24 @@ body {
   .prism-ray { animation: none; }
 }
 
-/* Light mode: solid white navbar and mega menu */
+/* Navbar: transparent, water-like frosted glass */
+.nav-bar.is-floating {
+  background: rgba(255, 255, 255, 0.07);
+  -webkit-backdrop-filter: blur(22px) saturate(1.8);
+  backdrop-filter: blur(22px) saturate(1.8);
+  border-color: rgba(255, 255, 255, 0.18);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.22), 0 14px 40px -14px rgba(0, 0, 0, 0.55);
+}
 :root[data-theme="light"] .nav-bar {
-  background: #ffffff;
-  border-color: rgba(7, 18, 46, 0.1);
+  background: rgba(255, 255, 255, 0.45);
+  -webkit-backdrop-filter: blur(22px) saturate(1.6);
+  backdrop-filter: blur(22px) saturate(1.6);
+  border-color: rgba(255, 255, 255, 0.7);
 }
 :root[data-theme="light"] .nav-bar.is-floating {
-  box-shadow: 0 10px 34px -12px rgba(7, 18, 46, 0.22);
+  background: rgba(255, 255, 255, 0.6);
+  border-color: rgba(255, 255, 255, 0.85);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.95), 0 10px 34px -12px rgba(7, 18, 46, 0.25);
 }
 :root[data-theme="light"] .nav-link {
   color: #3a4966;
@@ -312,7 +323,7 @@ body {
   color: #07122e;
 }
 :root[data-theme="light"] .mega-panel {
-  background: #ffffff;
+  background: rgba(255, 255, 255, 0.82);
   border-color: rgba(7, 18, 46, 0.1);
   box-shadow: 0 24px 60px -20px rgba(7, 18, 46, 0.25);
 }
@@ -431,15 +442,31 @@ select.field option {
   position: relative;
   background: #ffffff;
   color: #07122e;
-  font-weight: 600;
+  font-weight: 500;
   border: 1px solid rgba(7, 18, 46, 0.14);
-  box-shadow: 0 8px 26px -10px rgba(0, 0, 0, 0.45);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  box-shadow: 0 4px 14px -8px rgba(0, 0, 0, 0.4);
+  transition: opacity 0.2s ease, transform 0.2s ease;
 }
 .btn-white:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 12px 32px -8px rgba(0, 0, 0, 0.5);
+  opacity: 0.9;
 }
 .btn-white:active {
-  transform: translateY(0);
+  transform: translateY(1px);
+}
+
+/* AiTexTools panel */
+.atx-surface {
+  background:
+    radial-gradient(760px 520px at 88% 70%, rgba(255, 110, 40, 0.2), transparent 62%),
+    radial-gradient(700px 420px at 4% 0%, rgba(99, 102, 241, 0.16), transparent 60%),
+    rgb(var(--tint) / 0.025);
+  border: 1px solid rgb(var(--tint) / 0.14);
+}
+
+/* the hand rests slightly past the panel border, then fades out */
+@media (min-width: 1024px) {
+  .hand-fade {
+    -webkit-mask-image: linear-gradient(to bottom, #000 93.5%, transparent 100%);
+    mask-image: linear-gradient(to bottom, #000 93.5%, transparent 100%);
+  }
 }

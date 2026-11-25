@@ -20,7 +20,7 @@ export default function PdfellaPage() {
         title={
           <>
             Every PDF job,{" "}
-            <span className="font-serif-display font-normal text-pdf italic">done in your browser.</span>
+            <span className="text-pdf">done in your browser.</span>
           </>
         }
         description="PDFella brings editing, conversion, organising and security into one fast workspace. Built by us, used by us, and free to try."
@@ -33,10 +33,10 @@ export default function PdfellaPage() {
             href="https://pdfella.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-full bg-pdf-solid px-7 py-3.5 text-base font-medium text-white shadow-[0_10px_30px_-8px_rgba(14,122,98,0.7)] transition-transform hover:-translate-y-0.5"
+            className="inline-flex items-center gap-2 rounded-full bg-pdf-solid px-6 py-2.5 text-[15px] font-medium text-[#ffffff] transition-opacity hover:opacity-90"
           >
             Open PDFella
-            <ArrowUpRight className="size-4" strokeWidth={2.25} />
+            <ArrowUpRight className="size-3.5" strokeWidth={2.25} />
           </a>
           <Button href="/contact" variant="ghost" size="lg">
             Talk to us

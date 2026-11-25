@@ -29,7 +29,7 @@ export function Pdfella() {
               </div>
 
               <h2 className="mt-8 max-w-xl text-4xl leading-[1.05] font-semibold tracking-tight sm:text-5xl lg:text-6xl">
-                Everything PDF, <span className="font-serif-display font-normal text-pdf italic">right in your browser</span>
+                Everything PDF, <span className="text-pdf">right in your browser</span>
               </h2>
               <p className="mt-5 max-w-xl text-xl text-foreground/80 sm:text-2xl">
                 Edit text, sign, convert, compress and protect documents in seconds. No
@@ -52,14 +52,14 @@ export function Pdfella() {
                   href="https://pdfella.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 rounded-full bg-pdf-solid px-7 py-3.5 text-base font-medium text-white shadow-[0_10px_30px_-8px_rgba(14,122,98,0.7)] transition-transform hover:-translate-y-0.5"
+                  className="inline-flex items-center gap-2 rounded-full bg-pdf-solid px-6 py-2.5 text-[15px] font-medium text-[#ffffff] transition-opacity hover:opacity-90"
                 >
                   Open PDFella
-                  <ArrowUpRight className="size-4" strokeWidth={2.25} />
+                  <ArrowUpRight className="size-3.5" strokeWidth={2.25} />
                 </a>
                 <Link
                   href="/pdfella"
-                  className="btn-ghost inline-flex items-center rounded-full px-7 py-3.5 text-base"
+                  className="btn-ghost inline-flex items-center rounded-full px-6 py-2.5 text-[15px]"
                 >
                   See all tools
                 </Link>
